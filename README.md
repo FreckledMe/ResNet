@@ -2,6 +2,7 @@
  
  After the first CNN-based architecture (AlexNet) that win the ImageNet 2012 competition, Every subsequent winning architecture uses more layers in a deep neural network to reduce the error rate. This works for less number of layers, but when we increase the number of layers, there is a common problem in deep learning associated with that called the Vanishing/Exploding gradient. This causes the gradient to become 0 or too large. Thus when we increases number of layers, the training and test error rate also increases. 
 
+Comparison of 20-layer vs 56-layer architecture
  <img src="abc.png">
 
  In the above plot, we can observe that a 56-layer CNN gives more error rate on both training and testing dataset than a 20-layer CNN architecture. After analyzing more on error rate the authors were able to reach conclusion that it is caused by vanishing/exploding gradient. 
@@ -12,7 +13,7 @@ The approach behind this network is instead of layers learning the underlying ma
 
     F(x) := H(x) - x which gives H(x) := F(x) + x. 
 
-Comparison of 20-layer vs 56-layer architecture
+
 <img src="skip.png">
 
 The advantage of adding this type of skip connection is that if any layer hurt the performance of architecture then it will be skipped by regularization. So, this results in training a very deep neural network without the problems caused by vanishing/exploding gradient.  The authors of the paper experimented on 100-1000 layers of the CIFAR-10 dataset. 
