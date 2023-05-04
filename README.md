@@ -25,4 +25,4 @@ Network Architecture: This network uses a 34-layer plain network architecture in
 
     pip install -r requirements.txt
 
-Run [resnet.ipynb ](https://github.com/FreckledMe/GoogleNet/blob/main/resnet.ipynb)
+Run [resnet.ipynb ](https://github.com/FreckledMe/ResNet/blob/main/resnet.ipynb)
