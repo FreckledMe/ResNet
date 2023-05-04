@@ -12,6 +12,7 @@ The approach behind this network is instead of layers learning the underlying ma
 
     F(x) := H(x) - x which gives H(x) := F(x) + x. 
 
+Comparison of 20-layer vs 56-layer architecture
 <img src="skip.png">
 
 The advantage of adding this type of skip connection is that if any layer hurt the performance of architecture then it will be skipped by regularization. So, this results in training a very deep neural network without the problems caused by vanishing/exploding gradient.  The authors of the paper experimented on 100-1000 layers of the CIFAR-10 dataset. 
